@@ -1,50 +1,100 @@
-# Welcome to your Expo app 👋
+# HNG Task 0 - Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
+This is a mobile application developed using [Expo](https://expo.dev) and React Native. The application serves as a task submission for the HNG internship program. It includes navigation to relevant links such as the GitHub repository and HNG hire page. The app features a simple UI with a responsive design and an animated fade-in effect.
 
-## Get started
+## Features
+- **Expo-based React Native App**: Built with `create-expo-app` for ease of development and deployment.
+- **Professional UI**: Styled with the HNG brand colors (`#00aeff` and white) for consistency and aesthetic appeal.
+- **Smooth Animations**: Uses `Animated` API for a fade-in effect on app launch.
+- **Navigation Links**: Provides direct access to the GitHub repository and HNG hire page.
+- **Mobile Optimization**: Designed to be fully responsive and work seamlessly across different screen sizes.
 
-1. Install dependencies
+## Project Links
+- **GitHub Repository:** [Click here](https://github.com/G4EVA-dev/hng-mobile-desktop-stage-0.git)
+- **HNG Hire Page:** [Click here](https://hng.tech/hire)
 
-   ```bash
-   npm install
-   ```
+## Installation and Setup
+To run this project locally, follow the steps below:
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### 1. Clone the Repository
 ```bash
-npm run reset-project
+git clone https://github.com/G4EVA-dev/hng-mobile-desktop-stage-0.git
+cd my-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install Dependencies
+Ensure you have [Node.js](https://nodejs.org/) installed, then run:
+```bash
+npm install
+```
 
-## Learn more
+### 3. Run the Application
+Start the Expo development server:
+```bash
+npx expo start
+```
+This command will provide options to open the app in:
+- An Android emulator ([setup guide](https://docs.expo.dev/workflow/android-studio-emulator/))
+- An iOS simulator ([setup guide](https://docs.expo.dev/workflow/ios-simulator/))
+- The Expo Go app ([download here](https://expo.dev/go))
 
-To learn more about developing your project with Expo, look at the following resources:
+## Development Guidelines
+### File Structure
+The project follows a modular file structure:
+```
+├── assets/          # Static assets (logo, images, etc.)
+├── app/             # Main application source code
+├── components/      # Reusable UI components
+├── styles/          # Global styles and themes
+├── package.json     # Dependencies and scripts
+├── App.tsx         # Root component
+```
+### Code Style
+- Use **TypeScript** for type safety.
+- Follow **React Native best practices**.
+- Maintain **consistent styling** with `StyleSheet.create()`.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Play with the app here
+([appetize.io](https://appetize.io/app/b_7gdb7ybx6mazzjfgoyddhctdi4))
 
-## Join the community
+## Contribution Guidelines
+### How to Contribute
+We welcome contributions! Follow these steps:
+1. **Fork the Repository**
+   - Click the **Fork** button on GitHub.
+2. **Clone Your Fork**
+   ```bash
+   git clone https://github.com/G4EVA-dev/hng-mobile-desktop-stage-0.git
+   cd my-app
+   ```
+3. **Create a New Branch**
+   ```bash
+   git checkout -b feature-your-feature-name
+   ```
+4. **Make Changes and Commit**
+   ```bash
+   git add .
+   git commit -m "Added new feature"
+   ```
+5. **Push to Your Fork and Create a Pull Request**
+   ```bash
+   git push origin feature-your-feature-name
+   ```
+   - Open a **Pull Request** on the main repository.
 
-Join our community of developers creating universal apps.
+### Contribution Guidelines
+- Ensure code quality and follow project conventions.
+- Submit clear, descriptive pull requests.
+- Keep commits **atomic** (one feature per commit).
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## License
+This project is open-source and licensed under the **MIT License**.
+
+## Contact
+For any issues or suggestions, feel free to reach out via [GitHub Issues](https://github.com/G4EVA-dev/hng-mobile-desktop-stage-0/issues).
+
+---
+
+Thank you for contributing to the HNG Task 0 Mobile App! 🚀
+
