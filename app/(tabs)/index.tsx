@@ -5,8 +5,12 @@ import {
   Text,
   Linking,
   View,
+  Image,
   StyleSheet,
 } from "react-native";
+
+// Import the logo from assets
+import logo from "@/assets/images/hng.png"; // Adjust the path if necessary
 
 // Define props type for CustomButton
 type ButtonProps = {
@@ -39,7 +43,13 @@ const App = () => {
 
   return (
     <Animated.View style={[styles.container, { opacity: fadeAnim }]}>
+      {/* Logo at the top-left */}
+      <View style={styles.logoContainer}>
+        <Image source={logo} style={styles.logo} />
+      </View>
+
       <Text style={styles.heading}>Welcome to My HNG Task 0</Text>
+
       <CustomButton
         title="Visit GitHub Repository"
         url="https://github.com/G4EVA-dev/hng-mobile-desktop-stage-0"
@@ -55,15 +65,25 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#ffffff", // White background for a modern look
+  },
+  logoContainer: {
+    position: "absolute",
+    top: 40,
+    left: 20,
+  },
+  logo: {
+    width: 100, // Adjust size as needed
+    height: 100,
+    resizeMode: "contain", // Ensures the logo scales well
   },
   button: {
-    backgroundColor: "#6200ee", // Purple color
+    backgroundColor: "#00aeff", // Brand color
     paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 8,
     marginVertical: 10,
-    width: "70%",
+    width: "80%",
     alignItems: "center",
     elevation: 3, // Shadow for Android
     shadowColor: "#000", // Shadow for iOS
@@ -72,16 +92,17 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
   },
   buttonText: {
-    color: "#fff",
+    color: "#ffffff", // White text
     fontSize: 16,
     fontWeight: "bold",
     textAlign: "center",
   },
   heading: {
-    color: "black",
-    fontSize: 20,
+    color: "#00aeff", // Brand color
+    fontSize: 24,
     fontWeight: "bold",
-    marginBottom: 20, // Added better spacing
+    marginBottom: 20,
+    textAlign: "center",
   },
 });
 
