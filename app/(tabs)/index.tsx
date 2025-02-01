@@ -73,8 +73,8 @@ const styles = StyleSheet.create({
     left: 20,
   },
   logo: {
-    width: 100, // Adjust size as needed
-    height: 100,
+    width: 125, // Adjust size as needed
+    height: 125,
     resizeMode: "contain", // Ensures the logo scales well
   },
   button: {
