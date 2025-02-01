@@ -20,7 +20,7 @@ To run this project locally, follow the steps below:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/G4EVA-dev/hng-mobile-desktop-stage-0.git
-cd my-app
+cd app
 ```
 
 ### 2. Install Dependencies
@@ -48,7 +48,7 @@ The project follows a modular file structure:
 ├── components/      # Reusable UI components
 ├── styles/          # Global styles and themes
 ├── package.json     # Dependencies and scripts
-├── App.tsx         # Root component
+├── Index.tsxx        # Root component
 ```
 ### Code Style
 - Use **TypeScript** for type safety.
@@ -66,7 +66,7 @@ We welcome contributions! Follow these steps:
 2. **Clone Your Fork**
    ```bash
    git clone https://github.com/G4EVA-dev/hng-mobile-desktop-stage-0.git
-   cd my-app
+   cd app
    ```
 3. **Create a New Branch**
    ```bash
